@@ -24,3 +24,11 @@ let ObjectType = function (name, initialize) {
         initialize.bind(this)()
     }
 }
+
+game.advance = () => {
+    game.time += 1
+}
+
+game.begin = () => {
+    game.time = 0
+}

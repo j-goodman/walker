@@ -17,7 +17,7 @@ Person.prototype.go = function (doorId) {
     } else if (this.room === door.from) {
         this.room = door.to
         fromRoom.contents = fromRoom.contents.filter(id => {
-          return id !== this.id
+            return id !== this.id
         })
         toRoom.contents.push(this.id)
     } else {

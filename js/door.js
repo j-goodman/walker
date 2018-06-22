@@ -8,8 +8,8 @@ game.connect = (fromId, toId, name) => {
     door.name = name
     door.from = fromId
     door.to = toId
-    game.get(fromId).contents.push(door)
-    game.get(fromId).doors.push(door)
-    game.get(toId).contents.push(door)
-    game.get(toId).doors.push(door)
+    game.get(fromId).contents.push(door.id)
+    game.get(fromId).doors.push(door.id)
+    game.get(toId).contents.push(door.id)
+    game.get(toId).doors.push(door.id)
 }
